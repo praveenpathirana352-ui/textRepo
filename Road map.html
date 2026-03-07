@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Image Map Navigation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            overflow: hidden;
+        }
+
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+        }
+
+
+    .nav-image {
+    opacity: 0;
+ 
+    transition: opacity 0.5s ;
+    visibility: 0.1s ease-in;
+    width: 100%;
+    height: 100vh;
+}
+#img1{
+    opacity: 1;
+}
+
+.nav-image:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+
+
+        .nav-dots {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 15px;
+            z-index: 100;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 10px 20px;
+            border-radius: 40px;
+        }
+
+        .nav-dots a {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.5);
+            transition: all 0.3s;
+            display: block;
+        }
+
+        .nav-dots a:hover {
+            background: white;
+            transform: scale(1.3);
+        }
+
+        /* Current page indicator using :target */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <img src="images/img_1.jpg" class="nav-image" id="img1" usemap="#map1" alt="Image 1">
+        <img src="images/img_2.jpg" class="nav-image" id="img2" usemap="#map2" alt="Image 2">
+        <img src="images/img_3.jpg" class="nav-image" id="img3" usemap="#map3" alt="Image 3">
+        <img src="images/img_4.jpg" class="nav-image" id="img4" usemap="#map4" alt="Image 4">
+        <img src="images/img_5.jpg" class="nav-image" id="img5" usemap="#map5" alt="Image 5">
+        <img src="images/img_6.jpg" class="nav-image" id="img6" usemap="#map6" alt="Image 6">
+        <img src="images/img_7.jpg" class="nav-image" id="img7" usemap="#map7" alt="Image 7">
+        <img src="images/img_8.jpg" class="nav-image" id="img8" usemap="#map8" alt="Image 8">
+        <img src="images/img_8.jpg" class="nav-image" id="img8" usemap="#map8" alt="Image 8">
+        <img src="images/img_9.jpg" class="nav-image" id="img9" usemap="#map9" alt="Image 9">
+        <img src="images/img_10.jpg" class="nav-image" id="img10" usemap="#map10" alt="Image 10">
+        <img src="images/img_11.jpg" class="nav-image" id="img11" usemap="#map11" alt="Image 11">
+        <img src="images/img_12.jpg" class="nav-image" id="img12" usemap="#map12" alt="Image 12">
+        <img src="images/img_13.jpg" class="nav-image" id="img13" usemap="#map13" alt="Image 13">
+        <img src="images/img_14.jpg" class="nav-image" id="img14" usemap="#map14" alt="Image 14">
+        <img src="images/img_15.jpg" class="nav-image" id="img15" usemap="#map15" alt="Image 15">
+        <img src="images/img_16.jpg" class="nav-image" id="img16" usemap="#map16" alt="Image 16">
+        <img src="images/img_17.jpg" class="nav-image" id="img17" usemap="#map17" alt="Image 17">
+
+        <!------------------------------------------------------------------------------------------------->
+
+        <map name="map1">
+            <area shape="rect" coords="200,200,600,600" href="#img2" alt="Go to Image 2" title="Go to Image 2">
+        </map>
+        <map name="map2">
+            <area shape="rect" coords="1500,300,800,600" href="#img3" alt="Go to Image 3" title="Go to Image 3">
+        </map>
+
+        <map name="map3">
+            <area shape="rect" coords="1500,300,800,600" href="#img4" alt="Go to Image 4" title="Go to Image 4">
+        </map>
+        <map name="map4">
+            <area shape="rect" coords="100,300,800,800" href="#img5" alt="Go to Image 5" title="Go to Image 5">
+        </map>
+        <map name="map5">
+            <area shape="rect" coords="100,200,700,600" href="#img6" alt="Go to Image 5" title="Go to Image 6">
+        </map>
+        <map name="map6">
+            <area shape="rect" coords="400,200,900,600" href="#img7" alt="Go to Image 6" title="Go to Image 7">
+        </map>
+        <map name="map7">
+            <area shape="rect" coords="400,200,900,600" href="#img8" alt="Go to Image 7" title="Go to Image 8">
+        </map>
+        <map name="map8">
+            <area shape="rect" coords="600,200,900,600" href="#img9" alt="Go to Image 8" title="Go to Image 9">
+        </map>
+        <map name="map9">
+            <area shape="rect" coords="600,200,900,600" href="#img10" alt="Go to Image 9" title="Go to Image 10">
+        </map>
+        <map name="map10">
+            <area shape="rect" coords="600,200,900,600" href="#img11" alt="Go to Image 10" title="Go to Image 11">
+        </map>
+        <map name="map11">
+            <area shape="rect" coords="600,200,900,600" href="#img12" alt="Go to Image 11" title="Go to Image 12">
+        </map>
+        <map name="map12">
+            <area shape="rect" coords="600,200,900,600" href="#img13" alt="Go to Image 12" title="Go to Image 13">
+        </map>
+        <map name="map13">
+            <area shape="rect" coords="600,200,1200,600" href="#img14" alt="Go to Image 13" title="Go to Image 14">
+        </map>
+        <map name="map14">
+            <area shape="rect" coords="400,200,900,600" href="#img15" alt="Go to Image 14" title="Go to Image 15">
+        </map>
+        <map name="map15">
+            <area shape="rect" coords="200,200,600,600" href="#img16" alt="Go to Image 15" title="Go to Image 16">
+        </map>
+        <map name="map16">
+            <area shape="rect" coords="400,200,1000,600" href="#img17" alt="Go to Image 16" title="Go to Image 17">
+        </map>
+
+
+
+
+
+
+
+        <!-- Navigation Dots -->
+        <div class="nav-dots">
+            <a href="#img1"></a>
+            <a href="#img2"></a>
+            <a href="#img3"></a>
+            <a href="#img4"></a>
+            <a href="#img5"></a>
+            <a href="#img6"></a>
+            <a href="#img7"></a>
+            <a href="#img8"></a>
+            <a href="#img9"></a>
+            <a href="#img10"></a>
+            <a href="#img11"></a>
+            <a href="#img12"></a>
+            <a href="#img13"></a>
+            <a href="#img14"></a>
+            <a href="#img15"></a>
+            <a href="#img16"></a>
+            <a href="#img17"></a>
+        </div>
+
+
+
+
+    </div>
+
+
+</body>
+
+</html>
